@@ -1,6 +1,6 @@
 {
   "name": "@elonehoo/is-window",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "description": "Check if the given value is a window object.",
   "author": "Elone Hoo <huchengyea@163.com>",
