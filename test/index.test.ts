@@ -8,7 +8,7 @@ describe('should', () => {
     expect(isWindow(true)).toEqual(false)
     expect(isWindow(null)).toEqual(false)
     expect(isWindow({})).toEqual(false)
-    expect(isWindow(function(){})).toEqual(false)
+    expect(isWindow(() => {})).toEqual(false)
     expect(isWindow([])).toEqual(false)
   })
 })
