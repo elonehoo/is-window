@@ -1,0 +1,11 @@
+# pnpm 11+ defaults minimumReleaseAge to 1440 minutes and verifies every
+# lockfile entry against it. CI installs with `pnpm version: latest` (pnpm 12),
+# so a Renovate lockfile that picked up a release from the last day fails with
+# ERR_PNPM_MINIMUM_RELEASE_AGE_VIOLATION before lint, test, coverage, or typecheck.
+minimumReleaseAge: 0
+
+# pnpm 10+ refuses to finish install when a dependency build script is neither
+# approved nor denied. These two are the scripts this tree needs.
+allowBuilds:
+  esbuild: true
+  pnpm: true
